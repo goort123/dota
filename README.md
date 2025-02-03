@@ -38,13 +38,17 @@
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
 
-Install the dependencies and devDependencies and start the server.
+также создайте env.local
+зарестрийтесь на  сайте stratz
+получите токен 
+и вставьте vite_token = ""
+
 
 ```sh
 git clone
 npm i
 cd
 npm run dev
+
 ```
