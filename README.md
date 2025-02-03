@@ -1,20 +1,15 @@
 # дотабафф
+
 # React + TypeScript + Vite
 
-
-
 Аналог дотабаффа
-
 
 ## Возможности
 
 - Меню героев
 - анализ меты
 
-
 ## Технологии
-
-
 
 - [@apollo/client] - Комплексный клиент для GraphQL, упрощающий управление данными и кэширование.
 - [@radix-ui/react-dropdown-menu] - Набор React-компонентов для создания кастомных выпадающих меню с хорошей доступностью.
@@ -41,9 +36,6 @@
 - [tailwind-merge] - Утилита для объединения классов Tailwind CSS, предотвращая конфликты.
 - [tailwindcss-animate] - Плагин для Tailwind CSS, добавляющий анимации и переходы.
 
-
-
-
 ## Installation
 
 Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
@@ -53,9 +45,6 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 git clone
 npm i
-cd 
+cd
 npm run dev
 ```
-
-
-
