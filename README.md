@@ -1,30 +1,61 @@
+# дотабафф
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Аналог дотабаффа
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Возможности
 
-- Configure the top-level `parserOptions` property like this:
+- Меню героев
+- анализ меты
 
-```js
-export default {
-	// other rules...
-	parserOptions: {
-		ecmaVersion: 'latest',
-		sourceType: 'module',
-		project: ['./tsconfig.json', './tsconfig.node.json'],
-		tsconfigRootDir: __dirname
-	}
-}
+
+## Технологии
+
+
+
+- [@apollo/client] - Комплексный клиент для GraphQL, упрощающий управление данными и кэширование.
+- [@radix-ui/react-dropdown-menu] - Набор React-компонентов для создания кастомных выпадающих меню с хорошей доступностью.
+- [@radix-ui/react-icons] - Коллекция стильных иконок для React-приложений.
+- [@radix-ui/react-popover] - React-компонент для создания попаверов (всплывающих окон) с гибкими настройками.
+- [@radix-ui/react-separator] - Простой компонент для создания визуальных разделителей.
+- [@radix-ui/react-slot] - Компонент-слот для гибкого управления композицией React-компонентов.
+- [@radix-ui/react-tabs] - React-компонент для создания вкладок с хорошей доступностью.
+- [@radix-ui/react-tooltip] - React-компонент для создания тултипов (всплывающих подсказок).
+- [@reduxjs/toolkit] - Официальный набор инструментов для работы с Redux, упрощающий разработку и управление состоянием приложения.
+- [@tanstack/react-table] - Мощная и гибкая библиотека для создания таблиц в React-приложениях.
+- [@tsparticles/engine] - Движок для создания интерактивных эффектов частиц на веб-страницах.
+- [@tsparticles/react] - React-компонент для интеграции эффектов частиц в React-приложения.
+- [@tsparticles/slim] - Облегченная версия движка эффектов частиц для оптимизации производительности.
+- [class-variance-authority] - Утилита для управления классами CSS на основе вариантов (вариаций) компонентов.
+- [clsx] - Утилита для условного добавления классов CSS.
+- [lucide-react] - Набор иконок для React с чистым и современным дизайном.
+- [react] - JavaScript-библиотека для построения пользовательских интерфейсов.
+- [react-device-detect] - Библиотека для определения типа устройства (мобильное, десктоп и т.д.) пользователя.
+- [react-dom] - Точка входа для рендеринга React-компонентов в DOM.
+- [react-router-dom] - Библиотека для навигации в React-приложениях.
+- [react-spinners] - Набор анимированных спиннеров и лоадеров для индикации загрузки.
+- [styled-components] - Библиотека для стилизации React-компонентов с использованием CSS-in-JS.
+- [tailwind-merge] - Утилита для объединения классов Tailwind CSS, предотвращая конфликты.
+- [tailwindcss-animate] - Плагин для Tailwind CSS, добавляющий анимации и переходы.
+
+
+
+
+## Installation
+
+Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+git clone
+npm i
+cd 
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
