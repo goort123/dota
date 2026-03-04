@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@theme {
+	/* Цвета */
+	--color-background: hsl(var(--background));
+	--color-foreground: hsl(var(--foreground));
+	--color-primary: hsl(var(--primary));
+	--color-border: hsl(var(--border));
+	--color-navbar: #0a192f;
+	--color-desc: #eee;
+
+	/* Шрифты — теперь доступны как font-montserrat и font-radiance */
+	--font-montserrat: 'Montserrat', sans-serif;
+	--font-radiance: 'Radiance', sans-serif;
+
+	/* Размеры */
+	--radius-lg: var(--radius);
+	--spacing-xxs: 0.4rem; /* В v4 лучше использовать spacing для мелких размеров */
+
+	/* Анимации */
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+}
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 0 0% 3.9%;
+		--primary: 0 0% 9%;
+		--border: 0 0% 89.8%;
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 0 0% 3.9%;
+		--foreground: 0 0% 98%;
+		--primary: 0 0% 98%;
+		--border: 0 0% 14.9%;
+	}
+
+	/* Вместо @apply в селекторе '*' используем наследование в body */
+	body {
+		background-color: var(--color-background);
+		color: var(--color-foreground);
+		font-family: var(--font-radiance);
+		background-image: url('https://cdn.cloudflare.steamstatic.com');
+	}
+
+	/* Глобальные границы для всех элементов (аналог shadcn) */
+	*,
+	::after,
+	::before {
+		border-color: var(--color-border);
+	}
+}
+
+/* Кастомные утилиты */
+@utility small-text {
+	line-height: 1.75rem;
+	font-family: var(--font-radiance);
+	color: var(--color-gray-400);
+}
+
+@utility shadow-lol {
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+@font-face {
+	font-family: 'Radiance';
+	/* Убедись, что путь корректен относительно этого CSS файла */
+	src: url('./assets/fonts/radiance/radiance-regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

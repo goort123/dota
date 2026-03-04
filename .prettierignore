@@ -1,0 +1,15 @@
+# Ignore artifacts:
+src/assets//*
+
+# Ignore all files in the utils/graphql folder
+src/utils/graphql//*
+
+# Ignore files in the css files
+src//*.css
+src/assets
+
+# Ignore all files in the utils/graphql folder
+src/utils/graphql/*/*
+
+# Ignore css files
+src/*/*.css
