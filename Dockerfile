@@ -6,10 +6,13 @@ WORKDIR /app
 
 # Copy package files
 COPY package.json package-lock.json* ./
-RUN npm ci --only=production --ignore-scripts
+RUN npm ci --ignore-scripts
 
 # Copy source code
 COPY . .
+
+# Generate declaration files for composite project
+RUN npx tsc --project tsconfig.node.json --declaration --emitDeclarationOnly
 
 # Build the application
 RUN npm run build

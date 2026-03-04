@@ -54,5 +54,4 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           # 👇 Add the VITE_TOKEN as a build argument
-          build-args: |
-            VITE_TOKEN=${{ secrets.VITE_TOKEN }}
+          
